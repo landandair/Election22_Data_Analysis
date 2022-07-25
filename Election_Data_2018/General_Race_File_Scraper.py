@@ -1,4 +1,4 @@
-import numpy as np
+
 import csv
 
 state_list = ('AZ', 'MI', 'OH', 'PA', 'WA')
