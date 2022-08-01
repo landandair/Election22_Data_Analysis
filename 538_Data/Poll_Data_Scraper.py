@@ -41,6 +41,7 @@ def get_poll_data(race_dict):
                 race_dict[race][1] = data_dict[race]
 
     # Local Elections
+    print('Now Searching-' + 'Local Election Data')
     data_dict = dict(np.loadtxt('district_data.csv', delimiter=',', dtype='str', usecols=[1, 12]))
     keys = data_dict.keys()
     for race in race_dict.keys():
@@ -53,7 +54,7 @@ def get_poll_data(race_dict):
 if __name__ == '__main__':
     # comment out if you don't want new files
     print('getting fresh data')
-    #update_polls()
+    update_polls()
 
     # Translations(Add more if needed) needed for governors
     abbreviations = {'Kansas': 'KS', 'Michigan': 'MI', 'Wisconsin': 'WI', 'PA': 'PA'}
