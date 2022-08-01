@@ -59,7 +59,7 @@ if __name__ == '__main__':
     # Translations(Add more if needed) needed for governors
     abbreviations = {'Kansas': 'KS', 'Michigan': 'MI', 'Wisconsin': 'WI', 'PA': 'PA'}
 
-    district_trans = {'Senate' : 'u', 'House' : 'l'}
+    district_trans = {'Senate': 'u', 'House': 'l'}
 
     election_file = 'Election_List.csv'
     races = np.loadtxt(election_file, delimiter=',', dtype='str', usecols=0)[1:]
