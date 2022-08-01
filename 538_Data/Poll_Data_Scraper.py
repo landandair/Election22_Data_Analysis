@@ -2,6 +2,7 @@ import numpy as np
 import requests
 
 FILE_NAMES = ['538Senate.csv', '538House.csv', '538Governor.csv']
+OTHER_DATA = 'district_data.csv'
 
 def update_polls():
     """Downloads fresh versions of all of the csv files"""
@@ -13,12 +14,12 @@ def update_polls():
         r = requests.get(url, allow_redirects=True)
         open(file, 'wb').write(r.content)
     r = requests.get(district, allow_redirects=True)
-    open('district_data.csv', 'wb').write(r.content)
+    open(OTHER_DATA, 'wb').write(r.content)
 
 
 def get_poll_data(race_dict):
     """
-    Searches through files for the desired p.win for federal elections
+    Searches through files for the desired p.win for Legislative elections
     Inputs
         - dict: format: 538 raceid : [Airtable name, 0]
     outputs
@@ -41,8 +42,8 @@ def get_poll_data(race_dict):
                 race_dict[race][1] = data_dict[race]
 
     # Local Elections
-    print('Now Searching-' + 'Local Election Data')
-    data_dict = dict(np.loadtxt('district_data.csv', delimiter=',', dtype='str', usecols=[1, 12]))
+    print('Now Searching-' + OTHER_DATA)
+    data_dict = dict(np.loadtxt(OTHER_DATA, delimiter=',', dtype='str', usecols=[1, 12]))
     keys = data_dict.keys()
     for race in race_dict.keys():
         if race in keys:
@@ -79,7 +80,7 @@ if __name__ == '__main__':
         elif len(race) == 5:  # For Nat. House
             updated_name = race[:3] + str(int(race[3:]))
             desired_races[updated_name] = [race, -1]
-        elif len(race.split(' ')) == 3 and district_trans.keys().__contains__(race.split(' ')[1]):
+        elif len(race.split(' ')) == 3 and district_trans.keys().__contains__(race.split(' ')[1]):  # For District Races
             race_split = race.split(' ')
             updated_name = race_split[0].lower()+district_trans[race_split[1]]+race_split[2].strip('D')
             desired_races[updated_name] = [race, -1]
@@ -96,7 +97,7 @@ if __name__ == '__main__':
             ret.append('')
     races = list(races)
     races.insert(0, 'Office Name')
-    ret.insert(0, 'Probability of Win')
+    ret.insert(0, 'Polls')
     data = np.array(list(zip(races, ret)))
     print('Saving Data')
     np.savetxt(election_file, data, delimiter=',', fmt='%s')
