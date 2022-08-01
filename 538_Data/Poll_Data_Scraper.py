@@ -62,7 +62,7 @@ if __name__ == '__main__':
     district_trans = {'Senate' : 'u', 'House' : 'l'}
 
     election_file = 'Election_List.csv'
-    races = np.loadtxt(election_file, delimiter=',', dtype='str', usecols=0)
+    races = np.loadtxt(election_file, delimiter=',', dtype='str', usecols=0)[1:]
     desired_races = {}
     # Translating into 538 Race Designators
     for race in races:
@@ -94,8 +94,10 @@ if __name__ == '__main__':
             ret.append(desired_races[race])
         else:
             ret.append('')
-    ret = (np.array(ret))
-    data = np.array(list(zip(list(races), list(ret))))
+    races = list(races)
+    races.insert(0, 'Office Name')
+    ret.insert(0, 'Probability of Win')
+    data = np.array(list(zip(races, ret)))
     print('Saving Data')
     np.savetxt(election_file, data, delimiter=',', fmt='%s')
     print('done')
