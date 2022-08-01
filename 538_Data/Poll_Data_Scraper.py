@@ -5,14 +5,16 @@ FILE_NAMES = ['538Senate.csv', '538House.csv', '538Governor.csv']
 OTHER_DATA = 'district_data.csv'
 
 def update_polls():
-    """Downloads fresh versions of all of the csv files"""
+    """Downloads fresh versions of all the csv files"""
     urls = ['https://projects.fivethirtyeight.com/2022-general-election-forecast-data/senate_state_toplines_2022.csv',
             'https://projects.fivethirtyeight.com/2022-general-election-forecast-data/house_district_toplines_2022.csv',
             'https://projects.fivethirtyeight.com/2022-general-election-forecast-data/governor_state_toplines_2022.csv']
     district = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSBwdz78YjgsG_QccV_WvPb55xRHzK07mfPnLowjcS9r_lRgcQZS3OHONRHE0PeVbZwlFVjoHMiJ2Ju/pub?gid=211606255&single=true&output=csv'
+    # 538 Data
     for url, file in zip(urls, FILE_NAMES):
         r = requests.get(url, allow_redirects=True)
         open(file, 'wb').write(r.content)
+    # Other Data importing
     r = requests.get(district, allow_redirects=True)
     open(OTHER_DATA, 'wb').write(r.content)
 
