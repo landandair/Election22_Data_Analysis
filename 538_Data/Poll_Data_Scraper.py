@@ -4,6 +4,7 @@ import requests
 FILE_NAMES = ['538Senate.csv', '538House.csv', '538Governor.csv']
 
 def update_polls():
+    """Downloads fresh versions of all of the csv files"""
     urls = ['https://projects.fivethirtyeight.com/2022-general-election-forecast-data/senate_state_toplines_2022.csv',
             'https://projects.fivethirtyeight.com/2022-general-election-forecast-data/house_district_toplines_2022.csv',
             'https://projects.fivethirtyeight.com/2022-general-election-forecast-data/governor_state_toplines_2022.csv']
@@ -14,20 +15,19 @@ def update_polls():
 
 def get_poll_data(race_dict):
     """
-    Gets Race Data from airtable
+    Searches through files for the desired p.win for federal elections
     Inputs
         - dict: format: 538 raceid : [Airtable name, 0]
     outputs
         - dict: format: 538 raceid : [Airtable name, chance of win]
     """
-
     for file in FILE_NAMES:
         time_check = np.loadtxt(file, delimiter=',', dtype='str', usecols=3)
         check = time_check[1]
         number = len(check)
         for i, line in enumerate(time_check[1:]):
             if line != check:
-                print(line)
+                print('Now Searching-' + file + ': ' + check)
                 number = i+1
                 break
         data_dict = dict(np.loadtxt(file, delimiter=',', dtype='str', usecols=[2, 25])[:number])
@@ -40,9 +40,10 @@ def get_poll_data(race_dict):
 
 if __name__ == '__main__':
     # comment out if you don't want new files
+    print('getting fresh data')
     update_polls()
 
-    # Translations(Add more if needed)
+    # Translations(Add more if needed) needed for governors
     abbreviations = {'Kansas': 'KS', 'Michigan': 'MI', 'Wisconsin': 'WI', 'PA': 'PA'}
 
     election_file = 'Election_List.csv'
@@ -64,6 +65,7 @@ if __name__ == '__main__':
             updated_name = race[:3] + str(int(race[3:]))
             desired_races[updated_name] = [race, -1]
     # Get Data From Files
+    print('searching for data from files')
     desired_races = get_poll_data(desired_races)
 
     desired_races = dict(desired_races.values())
@@ -75,7 +77,9 @@ if __name__ == '__main__':
             ret.append('')
     ret = (np.array(ret))
     data = np.array(list(zip(list(races), list(ret))))
+    print('Saving Data')
     np.savetxt(election_file, data, delimiter=',', fmt='%s')
+    print('done')
 
 
 
