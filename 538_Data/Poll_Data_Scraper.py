@@ -50,6 +50,7 @@ if __name__ == '__main__':
     desired_races = {}
     # Translating into 538 Race Designators
     for race in races:
+        print(race)
         if race.__contains__('Governor'):  # For Governor
             state = race.split(' ')[0]
             if abbreviations.keys().__contains__(state):
