@@ -1,52 +1,52 @@
-PA Senate D6,
-PA House D30,
+PA Senate D6,0.316
+PA House D30,0.553
 MI-10,.37745
 U.S. Senate - WI,.34545
 WI-03,.45295
-PA House D160,
+PA House D160,0.316
 U.S. Senate - NC,.503425
 Kansas Attorney General,
-AZ Senate D4,
+AZ Senate D4,0.316
 PA-17,.4673
 MI-08,.750425
 Michigan Attorney General,
 AZ-06,.2879
-MI Senate D4,
+MI Senate D4,0.774
 MI-07,.63475
 OH-13,.321625
-AZ Senate D9,
+AZ Senate D9,0.387
 OH-01,.2912
 AZ-04,.6019
 Michigan Governor,.939825
-PA House D144,
-MI House D27,
-AZ Senate D2,
-MI House D48,
-AZ House D13,
+PA House D144,0.226
+MI House D27,0.316
+AZ Senate D2,0.050
+MI House D48,0.553
+AZ House D13,-1
 U.S. Senate - PA,.869725
 PA Governor,.853475
-AZ House D2,
+AZ House D2,-1
 Arizona Superintendent of Public Instruction,
-MI Senate D12,
+MI Senate D12,0.316
 Arizona Attorney General,
-MI Senate D35,
+MI Senate D35,0.500
 Kansas Governor,.538875
-AZ House D4,
-PA House D168,
+AZ House D4,-1
+PA House D168,0.500
 AZ House D9 (seat 1),
 Kansas State Treasurer,
 OH-09,.658425
 U.S. Senate - AZ,.801475
 Arizona State Treasurer,
 PA-07,.61615
-PA House D151,
-MI Senate D9,
-PA House D26,
-PA House D82,
-MI House D28,
-MI Senate D13,
-PA House D88,
-AZ House D9 (seat ,
+PA House D151,0.387
+MI Senate D9,0.447
+PA House D26,0.553
+PA House D82,0.553
+MI House D28,0.387
+MI Senate D13,0.684
+PA House D88,0.050
+AZ House D9 (seat 2),
 KS-03,.610225
 PA-07,.61615
 Ohio State Auditor,
