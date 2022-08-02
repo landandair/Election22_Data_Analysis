@@ -69,9 +69,10 @@ if __name__ == '__main__':
     desired_races = {}
     # Translating into 538 Race Designators
     for race in races:
-        if race.__contains__('Governor'):  # For Governor
+        if race.__contains__('Governor') and len(race.split(' ')) == 2:  # For Governor
             state = race.split(' ')[0]
             if abbreviations.keys().__contains__(state):
+                print(state)
                 updated_name = abbreviations[state] + '-G1'
                 desired_races[updated_name] = [race, -1]
             else:

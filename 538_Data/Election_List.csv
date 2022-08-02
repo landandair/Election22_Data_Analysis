@@ -1,5 +1,4 @@
 Office Name,Polls
-Arizona Attorney General,
 Arizona State Treasurer,
 Arizona Superintendent of Public Instruction,
 AZ House D2,-1
@@ -10,12 +9,12 @@ AZ House D13,-1
 AZ Senate D2,0.050
 AZ Senate D4,0.316
 AZ Senate D9,0.387
-AZ-04,.597775
-AZ-06,.285725
+AZ-04,.5864
+AZ-06,.284375
 Kansas Attorney General,
-Kansas Governor,.5393
+Kansas Governor,.5401
 Kansas State Treasurer,
-KS-03,.61175
+KS-03,.597875
 MI House D27,0.316
 MI House D28,0.387
 MI House D48,0.553
@@ -24,17 +23,17 @@ MI Senate D9,0.447
 MI Senate D12,0.316
 MI Senate D13,0.684
 MI Senate D35,0.500
-MI-07,.632825
-MI-08,.75185
-MI-10,.379325
+MI-07,.6274
+MI-08,.741675
+MI-10,.3824
 Michigan Attorney General,
-Michigan Governor,.939125
-NC-13,.423925
-OH-01,.29075
-OH-09,.658225
-OH-13,.323225
+Michigan Governor,.937525
+NC-13,.420925
+OH-01,.299
+OH-09,.6499
+OH-13,.32405
 Ohio State Auditor,
-PA Governor,.85125
+PA Governor,.8543
 PA House D26,0.553
 PA House D30,0.553
 PA House D82,0.553
@@ -44,13 +43,42 @@ PA House D151,0.387
 PA House D160,0.316
 PA House D168,0.500
 PA Senate D6,0.316
-PA-07,.619925
-PA-07,.619925
-PA-17,.46685
-U.S. Senate - AZ,.803925
-U.S. Senate - NC,.49735
-U.S. Senate - OH,.633875
-U.S. Senate - PA,.87195
-U.S. Senate - WI,.347725
-WI-03,.461725
-Wisconsin Governor,.698775
+PA-07,.610475
+PA-08,.61465
+PA-17,.472525
+U.S. Senate - AZ,.8059
+U.S. Senate - NC,.507525
+U.S. Senate - OH,.637825
+U.S. Senate - PA,.889375
+U.S. Senate - WI,.33685
+WI-03,.45475
+Wisconsin Governor,.698025
+PA-06,.814825
+PA Lieutenant Governor,
+PA Senate D10,0.684
+PA Senate D14,0.500
+PA Senate D18,0.553
+PA Senate D22,0.684
+PA Senate D24,0.316
+PA Senate D38,0.553
+PA Senate D40,0.316
+PA Senate D44,0.613
+PA House D2,0.684
+PA House D3,0.774
+PA House D16,0.613
+PA House D18,0.226
+PA House D25,0.613
+PA House D29,0.774
+PA House D33,0.500
+PA House D44,0.226
+PA House D53,0.774
+PA House D61,0.774
+PA House D74,0.684
+PA House D115,0.774
+PA House D118,0.447
+PA House D121,0.613
+PA House D137,0.226
+PA House D144,0.226
+PA House D158,0.684
+PA House D172,0.684
+PA House D189,0.684
