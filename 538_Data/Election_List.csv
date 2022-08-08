@@ -1,84 +1,85 @@
 Office Name,Polls
-Arizona State Treasurer,
-Arizona Superintendent of Public Instruction,
-AZ House D2,-1
-AZ House D4,-1
-AZ House D9 (seat ,
-AZ House D9 (seat ,
-AZ House D13,-1
-AZ Senate D2,0.050
-AZ Senate D4,0.316
-AZ Senate D9,0.500
-AZ-04,.70635
-AZ-06,.253225
-Kansas Attorney General,
-Kansas Governor,.550575
-Kansas State Treasurer,
-KS-03,.69565
-MI House D27,0.316
-MI House D28,0.387
-MI House D48,0.553
-MI Senate D4,0.774
-MI Senate D9,0.447
-MI Senate D12,0.316
-MI Senate D13,0.684
-MI Senate D35,0.500
-MI-07,.655925
-MI-08,.8118
-MI-10,.390225
-Michigan Attorney General,
-Michigan Governor,.942275
-NC-13,.429525
-OH-01,.2998
-OH-09,.679325
-OH-13,.334875
-Ohio State Auditor,
-PA Governor,.858725
-PA House D26,0.553
-PA House D30,0.553
-PA House D82,0.553
-PA House D88,0.050
-PA House D144,0.226
-PA House D151,0.387
-PA House D160,0.316
-PA House D168,0.500
-PA Senate D6,0.316
-PA-07,.675375
-PA-08,.6346
-PA-17,.48885
 U.S. Senate - AZ,.878575
+AZ-06,.253225
+AZ-04,.70635
+KS-03,.69565
+MI-10,.390225
+MI-08,.8118
+MI-07,.655925
 U.S. Senate - NC,.50755
+NC-13,.429525
 U.S. Senate - OH,.6654
+OH-13,.334875
+OH-09,.679325
+OH-01,.2998
 U.S. Senate - PA,.8962
-U.S. Senate - WI,.3573
-WI-03,.406875
-Wisconsin Governor,.699725
+PA-17,.48885
+PA-08,.6346
+PA-07,.675375
 PA-06,.90225
-PA Lieutenant Governor,
-PA Senate D10,0.684
-PA Senate D14,0.500
-PA Senate D18,0.553
-PA Senate D22,0.684
-PA Senate D24,0.316
-PA Senate D38,0.553
-PA Senate D40,0.316
+WI-03,.406875
+U.S. Senate - WI,.3573
+AZ Senate D9,0.500
+AZ Senate D4,0.316
+AZ Senate D2,0.050
+AZ House D13,-1
+AZ House D9 (seat 2),
+AZ House D9 (seat 1),
+AZ House D4,-1
+AZ House D2,-1
+Arizona Superintendent of Public Instruction,
+Arizona State Treasurer,
+Arizona Attorney General,
+Kansas State Treasurer,
+Kansas Governor,.550575
+Kansas Attorney General,
+Michigan Governor,.942275
+Michigan Attorney General,
+MI Senate D35,0.500
+MI Senate D13,0.684
+MI Senate D12,0.316
+MI Senate D9,0.447
+MI Senate D4,0.774
+MI House D48,0.553
+MI House D28,0.387
+MI House D27,0.316
+Ohio State Auditor,
 PA Senate D44,0.613
-PA House D2,0.684
-PA House D3,0.774
-PA House D16,0.613
-PA House D18,0.226
-PA House D25,0.613
-PA House D29,0.774
-PA House D33,0.500
-PA House D44,0.226
-PA House D53,0.774
-PA House D61,0.774
-PA House D74,0.684
-PA House D115,0.774
-PA House D118,0.447
-PA House D121,0.613
-PA House D137,0.226
-PA House D144,0.226
-PA House D158,0.684
-PA House D172,0.684
+PA Senate D40,0.316
+PA Senate D38,0.553
+PA Senate D24,0.316
+PA Senate D22,0.684
+PA Senate D18,0.553
+PA Senate D14,0.500
+PA Senate D10,0.684
+PA Senate D6,0.316
+PA Lieutenant Governor,
 PA House D189,0.684
+PA House D172,0.684
+PA House D168,0.500
+PA House D160,0.316
+PA House D158,0.684
+PA House D151,0.387
+PA House D144,0.226
+PA House D144,0.226
+PA House D137,0.226
+PA House D121,0.613
+PA House D118,0.447
+PA House D115,0.774
+PA House D88,0.050
+PA House D82,0.553
+PA House D74,0.684
+PA House D61,0.774
+PA House D53,0.774
+PA House D44,0.226
+PA House D33,0.500
+PA House D30,0.553
+PA House D29,0.774
+PA House D26,0.553
+PA House D25,0.613
+PA House D18,0.226
+PA House D16,0.613
+PA House D3,0.774
+PA House D2,0.684
+PA Governor,.858725
+Wisconsin Governor,.699725
