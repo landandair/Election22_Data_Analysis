@@ -72,7 +72,6 @@ if __name__ == '__main__':
         if race.__contains__('Governor') and len(race.split(' ')) == 2:  # For Governor
             state = race.split(' ')[0]
             if abbreviations.keys().__contains__(state):
-                print(state)
                 updated_name = abbreviations[state] + '-G1'
                 desired_races[updated_name] = [race, -1]
             else:
@@ -103,6 +102,7 @@ if __name__ == '__main__':
     ret.insert(0, 'Polls')
     data = np.array(list(zip(races, ret)))
     print('Saving Data')
+    # noinspection PyTypeChecker
     np.savetxt(election_file, data, delimiter=',', fmt='%s')
     print('done')
 
