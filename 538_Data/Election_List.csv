@@ -1,24 +1,24 @@
 Office Name,Polls
-U.S. Senate - AZ,.878575
-AZ-06,.253225
-AZ-04,.70635
-KS-03,.69565
-MI-10,.390225
-MI-08,.8118
-MI-07,.655925
-U.S. Senate - NC,.50755
-NC-13,.429525
-U.S. Senate - OH,.6654
-OH-13,.334875
-OH-09,.679325
-OH-01,.2998
-U.S. Senate - PA,.8962
-PA-17,.48885
-PA-08,.6346
-PA-07,.675375
-PA-06,.90225
-WI-03,.406875
-U.S. Senate - WI,.3573
+U.S. Senate - AZ,.910875
+AZ-06,.272875
+AZ-04,.7047
+KS-03,.544525
+MI-10,.400125
+MI-08,.68935
+MI-07,.651375
+U.S. Senate - NC,.5625
+NC-13,.439125
+U.S. Senate - OH,.70385
+OH-13,.3385
+OH-09,.674575
+OH-01,.29655
+U.S. Senate - PA,.898375
+PA-17,.5084
+PA-08,.60985
+PA-07,.642275
+PA-06,.874075
+WI-03,.3877
+U.S. Senate - WI,.34625
 AZ Senate D9,0.500
 AZ Senate D4,0.316
 AZ Senate D2,0.050
@@ -28,12 +28,14 @@ AZ House D9 (seat 1),
 AZ House D4,-1
 AZ House D2,-1
 Arizona Superintendent of Public Instruction,
+Michigan Secretary of State,
+Arizona Secretary of State,
 Arizona State Treasurer,
 Arizona Attorney General,
 Kansas State Treasurer,
-Kansas Governor,.550575
+Kansas Governor,.590475
 Kansas Attorney General,
-Michigan Governor,.942275
+Michigan Governor,.94545
 Michigan Attorney General,
 MI Senate D35,0.500
 MI Senate D13,0.684
@@ -81,5 +83,5 @@ PA House D18,0.226
 PA House D16,0.613
 PA House D3,0.774
 PA House D2,0.684
-PA Governor,.858725
-Wisconsin Governor,.699725
+PA Governor,.862075
+Wisconsin Governor,.781725
